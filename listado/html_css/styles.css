@@ -1,0 +1,100 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #ececec;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    background: #333;
+    border-radius: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #534c4c;
+}
+
+.subject {
+    float: left;
+    background-color: #fff;
+    border-radius: 10px;
+    width: calc(25% - 30px);
+    height: fit-content;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.subject-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.subject-info {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;     
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Estilos responsivos */
+
+@media screen and (max-width: 768px) {
+    .subject {
+        width: calc(50% - 30px);
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .subject {
+        width: 100%;
+    }
+    
+}
