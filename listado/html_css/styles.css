@@ -94,7 +94,7 @@ nav ul li a:hover {
 
 @media screen and (max-width: 480px) {
     .subject {
-        width: 100%;
+        width: calc(100% - 30px);
     }
     
 }
