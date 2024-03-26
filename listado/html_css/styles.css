@@ -6,12 +6,13 @@
 body {
     font-family: Arial, sans-serif;
     padding: 0;
+    margin: 0;
     background-color: #ececec;
 }
 
 header {
     background-color: #ffffff;
-    padding: 10px 20px;
+    padding-bottom: 15px;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -22,6 +23,135 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+}
+
+.navbar .logo {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.navbar li {
+    float: right;
+}
+  
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.subject {
+    float: left;
+    background-color: #fff;
+    border-radius: 10px;
+    width: calc(25% - 30px);
+    height: fit-content;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.subject-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.subject h2{
+    text-align: center;
+}
+
+.subject-info {
+    font-size: 0.9em;
+    list-style-type: none;
+    text-align: left;
+    margin: 5px; 
+    padding: 0;
+}
+
+.subject-info li {
+    margin-top: 5px;
+    text-align: left;
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 992px) {
+    .subject {
+        width: calc(33.3% - 30px);
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .subject {
+        width: calc(50% - 30px);
+    }   
+}
+
+@media screen and (max-width: 480px) {
+    .subject {
+        width: calc(100% - 30px);
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    .navbar li {
+        float: none;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul { 
+        width: 100%;
+    }
+}
+
+
+
+/* OPCION 1
 nav ul {
     list-style-type: none;
     padding: 10px;
@@ -48,58 +178,54 @@ nav ul li a:hover {
     background: #534c4c;
 }
 
-.subject {
-    float: left;
-    background-color: #fff;
-    border-radius: 10px;
-    width: calc(25% - 30px);
-    height: fit-content;
-    padding: 15px;
-    margin: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.subject-img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.subject h2{
-    text-align: center;
-}
-
-.subject-info {
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;     
-}
-
-.edit-button {
-    background-color: #4CAF50;
+OPCION 2
+.navbar {
+    background-color: #333;
     color: #fff;
-    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+  }
 
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
 
-/* Estilos responsivos */
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-@media screen and (max-width: 768px) {
-    .subject {
-        width: calc(50% - 30px);
+  .navbar ul li {
+    margin-bottom: 10px;
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+
+  .navbar ul li a:hover {
+    color: #ffcc00;
+  }
+
+@media screen and (min-width: 768px) {
+    .navbar ul {
+      flex-direction: row;
     }
-    
-}
 
-@media screen and (max-width: 480px) {
-    .subject {
-        width: calc(100% - 30px);
+    .navbar ul li {
+      margin-bottom: 0;
+      margin-right: 20px;
     }
-    
-}
+  }
+*/
