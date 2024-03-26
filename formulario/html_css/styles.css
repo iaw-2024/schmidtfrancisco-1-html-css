@@ -1,0 +1,131 @@
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    background: #333;
+    border-radius: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #534c4c;
+}
+
+form {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    border-radius: 5px;
+    border: #333 solid 1.5px;
+    padding: 8px;
+    margin: 0 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: #103d5c solid 2px;
+    outline-offset: -1px;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+
+#year-label, #quarter-label, #calification-label, #approval-date-label {
+    width: 50%;
+}
+
+#year {
+    width: calc(50% - 20px);
+    order: 3;
+}
+
+#quarter {
+    width: calc(50% - 20px);
+    order: 4;
+}
+
+#calification {
+    width: calc(50% - 20px);
+    order: 3;
+}
+
+#approval-date {
+    width: calc(50% - 20px);
+    order: 4;
+}
+
+#code {
+    width: 40%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    width: 30%;
+}
+
+
+
