@@ -4,7 +4,7 @@
   }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
     margin: 0;
     background-color: #ececec;
@@ -13,7 +13,7 @@ body {
 header {
     background-color: #ffffff;
     padding-bottom: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -23,15 +23,21 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
+/* Estilos de la barra de navegación */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #333;
+    padding-right: 10px;
+    
 }
 
 .navbar .logo {
     margin-left: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     text-decoration: none;
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -40,32 +46,61 @@ h1 {
 }
 
 .navbar ul {
+    display: flex;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
 }
-  
-.navbar li {
-    float: right;
-}
-  
+
+ 
 .navbar li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
+    margin: 5px 0;
+    border-radius: 5px;
     text-decoration: none;
 }
   
-/* Change the link color to #111 (black) on hover */
 .navbar li a:hover {
     background-color: #111;
 }
 
 .active {
-    background-color: #04AA6D;
+    background-color: #45a049;
+}
+
+/* Estilos del botón para agregar una nueva materia */
+.add-button-container {
+    overflow: auto;
+    margin-right: 30px;
+}
+
+.add-button{
+    float: right;
+    color: #fff;
+    background-color: #45a049;
+    padding: 10px 50px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease
+
+}
+
+.add-button:hover {
+    background-color: #396e3c;
+}
+
+/* Estilos de los elementos de la lista */
+main {
+    overflow: auto;
 }
 
 .subject {
@@ -117,7 +152,15 @@ h1 {
     background-color: #45a049;
 }
 
-/* Estilos responsivos */
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+
+}
+
+/* Estilos responsive */
 @media screen and (max-width: 992px) {
     .subject {
         width: calc(33.3% - 30px);
@@ -127,7 +170,26 @@ h1 {
 @media screen and (max-width: 768px) {
     .subject {
         width: calc(50% - 30px);
-    }   
+    } 
+    
+    .navbar {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .navbar ul { 
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar li {
+        width: 100%;
+    }
+
+    .navbar li a {
+        margin: 0 5px;   
+    }
+   
 }
 
 @media screen and (max-width: 480px) {
@@ -136,96 +198,3 @@ h1 {
     }    
 }
 
-@media screen and (max-width: 600px) {
-    .navbar li {
-        float: none;
-    }
-    .navbar {
-        flex-direction: column;
-    }
-
-    .navbar ul { 
-        width: 100%;
-    }
-}
-
-
-
-/* OPCION 1
-nav ul {
-    list-style-type: none;
-    padding: 10px;
-    background: #333;
-    border-radius: 10px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background: #534c4c;
-}
-
-OPCION 2
-.navbar {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar ul li {
-    margin-bottom: 10px;
-  }
-
-  .navbar ul li a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-  }
-
-  .navbar ul li a:hover {
-    color: #ffcc00;
-  }
-
-@media screen and (min-width: 768px) {
-    .navbar ul {
-      flex-direction: row;
-    }
-
-    .navbar ul li {
-      margin-bottom: 0;
-      margin-right: 20px;
-    }
-  }
-*/
