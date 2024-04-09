@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -29,12 +29,12 @@
         <main class="flex-container">
             <form>
                 <label for="subject-name">Nombre de la materia</label>
-                <input id="subject-name" type="text" placeholder="Ingeniería de Aplicaciones Web" autofocus required>
+                <input id="subject-name" name="subject-name" type="text" placeholder="Ingeniería de Aplicaciones Web" autofocus required>
                 <br>
 
                 <fieldset>
                     <label id="year-label" for="year">Año</label>
-                    <select id="year">
+                    <select id="year" name="year">
                         <option>1er Año</option>
                         <option>2do Año</option>
                         <option>3er Año</option>
@@ -43,7 +43,7 @@
                     </select>
 
                     <label id="quarter-label" for="quarter">Cuatrimestre</label>
-                    <select id="quarter">
+                    <select id="quarter" name="quarter">
                         <option>1er Cuatrimestre</option>
                         <option>2do Cuatrimestre</option>
                     </select>
@@ -51,25 +51,25 @@
                 <br>
 
                 <label for="teacher">Profesor</label>
-                <input id="teacher" type="name" placeholder="Marcelo Sanchez">
+                <input id="teacher" name="teacher" type="name" placeholder="Marcelo Sanchez">
                 <br>
 
                 <fieldset>
                     <label id="calification-label" for="calification">Calificación</label>
-                    <input id="calification" type="number">
+                    <input id="calification" name="calification" type="number" min="1" max="10">
                     <br>
 
                     <label id="approval-date-label" for="approval-date">Fecha de aprobación</label>
-                    <input id="approval-date" type="date">
+                    <input id="approval-date" name="approval-date" type="date">
                 </fieldset>
                 <br>
 
                 <label for="code">Código</label>
-                <input id="code" type="text" placeholder="5523">
+                <input id="code" name="code" type="text" placeholder="5523" required>
                 <br>
 
                 <label for="img">Imagen materia</label>
-                <input id="img" type="file">
+                <input id="img" name="img" type="file">
                 <br>
 
                 <input type="submit" value="Enviar">

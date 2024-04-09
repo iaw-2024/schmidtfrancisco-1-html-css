@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -82,14 +82,14 @@
 
           <div class="col-12">
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="subject-name" placeholder="Ingeniería de Aplicaciones Web">
+              <input type="text" class="form-control" id="subject-name" name="subject-name" placeholder="Ingeniería de Aplicaciones Web" required autofocus>
               <label for="subject-name">Nombre de la materia</label>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="form-floating mb-3">
-              <select class="form-select" id="year" aria-label="Seleccion de año">
+              <select class="form-select" id="year" name="year" aria-label="Seleccion de año">
                 <option value="1">1er Año</option>
                 <option value="2">2do Año</option>
                 <option value="3">3er Año</option>
@@ -102,7 +102,7 @@
 
           <div class="col-md-6">
             <div class="form-floating mb-3">
-              <select class="form-select" id="quarter" aria-label="Seleccion de cuatrimestre">
+              <select class="form-select" id="quarter" name="quarter" aria-label="Seleccion de cuatrimestre">
                 <option value="1">1er Cuatrimestre</option>
                 <option value="2">2do Cuatrimestre</option>
               </select>
@@ -112,40 +112,41 @@
 
           <div class="col-12">
             <div class="form-floating mb-3">
-              <input type="name" class="form-control" id="teacher" placeholder="Marcelo Sanchez">
+              <input type="name" class="form-control" id="teacher" name="teacher" placeholder="Marcelo Sanchez">
               <label for="teacher">Profesor</label>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="form-floating mb-3">
-              <input type="number" class="form-control" id="calification" placeholder="10">
+              <input type="number" class="form-control" id="calification" name="calification" placeholder="10" min="1" max="10">
               <label for="calification">Calificación</label>
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="form-floating mb-3">
-              <input type="date" class="form-control" id="approval-date">
+              <input type="date" class="form-control" id="approval-date" name="approval-date">
               <label for="approval-date">Fecha de aprobación</label>
             </div>
           </div>
 
           <div class="col-md-8">
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="code" placeholder="5523">
+              <input type="text" class="form-control" id="code" name="code" placeholder="5523" required>
               <label for="code">Código</label>
             </div>
           </div>
 
           <div class="col-md-12">
             <label for="img" class="form-label">Imagen de la materia</label>
-            <input class="form-control" type="file" id="img">
+            <input class="form-control" type="file" id="img" name="img">
           </div>
 
           <div class="col-12 text-end mt-5">
             <a class="btn btn-outline-danger rounded-pill" href="../../listado/bootstrap/listadoBootstrap.html"
-              role="button">Cancelar</a>
+              role="button">Cancelar
+            </a>
             <button type="submit" class="btn btn-primary rounded-pill mx-3 px-5">Agregar</button>
           </div>
         </form>
@@ -160,7 +161,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
