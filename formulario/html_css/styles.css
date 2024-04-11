@@ -1,0 +1,160 @@
+/* Estilos generales */
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.to-list-container {
+    overflow: auto;
+    margin-right: 30px;
+}
+
+.to-list{
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    background-color: #45a049;
+    padding: 10px 40px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    
+    transition: background-color 0.3s ease
+}
+
+.to-list:hover {
+    background-color: #396e3c;
+}
+
+/* Estilos del formulario */
+
+form {
+    font-size: 0.9em;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 40%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    border-radius: 5px;
+    border: #333 solid 1.5px;
+    padding: 8px;
+    margin: 0 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: #103d5c solid 2px;
+    outline-offset: -1px;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+
+#year-label, #quarter-label, #calification-label, #approval-date-label {
+    width: 50%;
+}
+
+#year {
+    width: calc(50% - 20px);
+    order: 3;
+}
+
+#quarter {
+    width: calc(50% - 20px);
+    order: 4;
+}
+
+#calification {
+    width: calc(50% - 20px);
+    order: 3;
+}
+
+#approval-date {
+    width: calc(50% - 20px);
+    order: 4;
+}
+
+#code {
+    width: 40%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.2em;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    width: 30%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 992px) {
+    form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    form {  
+        width: 90%;
+    }
+
+    .to-list {
+        padding: 6px 10px;
+    }
+}
+

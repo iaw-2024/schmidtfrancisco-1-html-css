@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Listado Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+  <div class="container-fluid p-0">
+
+    <nav class="navbar navbar-expand-md bg-dark border-bottom px-3" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand font-monospace fw-bold fs-4" href="../../index.html">Ejercicio Técnico I</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Básico
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="../html_css/listadoBasico.html">Listado</a></li>
+                <li><a class="dropdown-item" href="../../formulario/html_css/formBasico.html">Formulario</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">  
+              <a class="nav-link dropdown-toggle active" href="#" aria-current="page" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Bootstrap
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item active" href="#" aria-current="page">Listado</a></li>
+                <li><a class="dropdown-item" href="../../formulario/bootstrap/formBootstrap.html">Formulario</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" aria-current="page" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tailwind
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="../tailwindcss/listadoTailwind.html">Listado</a></li>
+                <li><a class="dropdown-item" href="../../formulario/tailwindcss/formTailwind.html">Formulario</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="mx-5 text-center border-bottom">
+      <h1 class="my-2 display-4 ">Listado de <span class="fw-bold text-primary-emphasis">Materias </span></h1>
+    </header>
+
+    <div class="container mt-3 text-end">
+      <a class="btn btn-primary font-monospace px-sm-4 py-sm-2 rounded-pill border border-dark-subtle" href="../../formulario/bootstrap/formBootstrap.html" role="button">+ Agregar</a>
+    </div>
+
+    <main id="listado" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4 m-2">
+
+      <div class="col">
+        <div class="card shadow border-2 border-secondary-subtle rounded-5">
+          <p class="card-header text-end fw-light rounded-top-5">Código: 5793</p>
+          <img src="https://moodle4vz.unsl.edu.ar/moodle/pluginfile.php/56787/course/overviewfiles/rpyalogoChico.png" class="card-img-top rounded-5 p-3">
+          <div class="card-body pt-0 text-end">
+            <h5 class="card-title text-center">Resolución de problemas y algoritmos</h5>
+            <ul class="list-group list-group-flush text-start">
+              <li class="list-group-item py-0">1° año</li>
+              <li class="list-group-item py-0">1° cuatrimestre</li>
+              <li class="list-group-item py-0"><strong>Profesor: </strong>Marcelo Sanchez</li>
+              <li class="list-group-item py-0"><strong>Calificación: </strong>10</li>
+              <li class="list-group-item py-0"><strong>Fecha de aprobación: </strong>01/08/2021</li>
+            </ul>
+            <button class="btn btn-primary opacity-75 rounded-pill mt-2">Editar</button>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col">
+        <div class="card shadow border-2 border-secondary-subtle rounded-5">
+          <p class="card-header text-end fw-light rounded-top-5">Código: 5551</p>
+          <img src="https://bloque10.unimagdalena.edu.co/wp-content/uploads/2021/06/portada-curso-calculo-integral.jpg" class="card-img-top rounded-5 p-3">
+          <div class="card-body pt-0 text-end">
+            <h5 class="card-title text-center">Análisis Matemático I</h5>
+            <ul class="list-group list-group-flush text-start">
+              <li class="list-group-item py-0">1° año</li>
+              <li class="list-group-item py-0">1° cuatrimestre</li>
+              <li class="list-group-item py-0"><strong>Profesor: </strong>Diana Montenegro</li>
+              <li class="list-group-item py-0"><strong>Calificación: </strong>8</li>
+              <li class="list-group-item py-0"><strong>Fecha de aprobación: </strong>01/08/2021</li>
+            </ul>
+            <button class="btn btn-primary opacity-75 rounded-pill mt-2">Editar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow border-2 border-secondary-subtle rounded-5">
+          <p class="card-header text-end fw-light rounded-top-5">Código: 5563</p>
+          <img src="https://www.ymant.com/wp-content/uploads/Base-de-Datos-YMANT.jpg" class="card-img-top rounded-5 p-3">
+          <div class="card-body pt-0 text-end">
+            <h5 class="card-title text-center">Bases de Datos</h5>
+            <ul class="list-group list-group-flush text-start">
+              <li class="list-group-item py-0">3° año</li>
+              <li class="list-group-item py-0">2° cuatrimestre</li>
+              <li class="list-group-item py-0"><strong>Profesor: </strong>Jose Fernandez</li>
+              <li class="list-group-item py-0"><strong>Calificación: </strong>9</li>
+              <li class="list-group-item py-0"><strong>Fecha de aprobación: </strong>03/12/2023</li>
+            </ul>
+            <button class="btn btn-primary opacity-75 rounded-pill mt-2">Editar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow border-2 border-secondary-subtle rounded-5">
+          <p class="card-header text-end fw-light rounded-top-5">Código: 5793</p>
+          <img src="https://moodle4vz.unsl.edu.ar/moodle/pluginfile.php/56787/course/overviewfiles/rpyalogoChico.png" class="card-img-top rounded-5 p-3">
+          <div class="card-body pt-0 text-end">
+            <h5 class="card-title text-center">Resolución de problemas y algoritmos</h5>
+            <ul class="list-group list-group-flush text-start">
+              <li class="list-group-item py-0">1° año</li>
+              <li class="list-group-item py-0">1° cuatrimestre</li>
+              <li class="list-group-item py-0"><strong>Profesor: </strong>Marcelo Sanchez</li>
+              <li class="list-group-item py-0"><strong>Calificación: </strong>10</li>
+              <li class="list-group-item py-0"><strong>Fecha de aprobación: </strong>01/08/2021</li>
+            </ul>
+            <button class="btn btn-primary opacity-75 rounded-pill mt-2">Editar</button>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col">
+        <div class="card shadow border-2 border-secondary-subtle rounded-5">
+          <p class="card-header text-end fw-light rounded-top-5">Código: 5551</p>
+          <img src="https://bloque10.unimagdalena.edu.co/wp-content/uploads/2021/06/portada-curso-calculo-integral.jpg" class="card-img-top rounded-5 p-3">
+          <div class="card-body pt-0 text-end">
+            <h5 class="card-title text-center">Análisis Matemático I</h5>
+            <ul class="list-group list-group-flush text-start">
+              <li class="list-group-item py-0">1° año</li>
+              <li class="list-group-item py-0">1° cuatrimestre</li>
+              <li class="list-group-item py-0"><strong>Profesor: </strong>Diana Montenegro</li>
+              <li class="list-group-item py-0"><strong>Calificación: </strong>8</li>
+              <li class="list-group-item py-0"><strong>Fecha de aprobación: </strong>01/08/2021</li>
+            </ul>
+            <button class="btn btn-primary opacity-75 rounded-pill mt-2">Editar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow border-2 border-secondary-subtle rounded-5">
+          <p class="card-header text-end fw-light rounded-top-5">Código: 5563</p>
+          <img src="https://www.ymant.com/wp-content/uploads/Base-de-Datos-YMANT.jpg" class="card-img-top rounded-5 p-3">
+          <div class="card-body pt-0 text-end">
+            <h5 class="card-title text-center">Bases de Datos</h5>
+            <ul class="list-group list-group-flush text-start">
+              <li class="list-group-item py-0">3° año</li>
+              <li class="list-group-item py-0">2° cuatrimestre</li>
+              <li class="list-group-item py-0"><strong>Profesor: </strong>Jose Fernandez</li>
+              <li class="list-group-item py-0"><strong>Calificación: </strong>9</li>
+              <li class="list-group-item py-0"><strong>Fecha de aprobación: </strong>03/12/2023</li>
+            </ul>
+            <button class="btn btn-primary opacity-75 rounded-pill mt-2">Editar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow border-2 border-secondary-subtle rounded-5">
+          <p class="card-header text-end fw-light rounded-top-5">Código: 5563</p>
+          <img src="https://www.ymant.com/wp-content/uploads/Base-de-Datos-YMANT.jpg" class="card-img-top rounded-5 p-3">
+          <div class="card-body pt-0 text-end">
+            <h5 class="card-title text-center">Bases de Datos</h5>
+            <ul class="list-group list-group-flush text-start">
+              <li class="list-group-item py-0">3° año</li>
+              <li class="list-group-item py-0">2° cuatrimestre</li>
+              <li class="list-group-item py-0"><strong>Profesor: </strong>Jose Fernandez</li>
+              <li class="list-group-item py-0"><strong>Calificación: </strong>9</li>
+              <li class="list-group-item py-0"><strong>Fecha de aprobación: </strong>03/12/2023</li>
+            </ul>
+            <button class="btn btn-primary opacity-75 rounded-pill mt-2">Editar</button>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+  </div>
+
+  <footer class="container-fluid p-3 mt-4 bg-dark text-white">
+    <p class="text-center">&copy; 2024 Francisco Schmidt - Ingeniería de Aplicaciones Web</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
